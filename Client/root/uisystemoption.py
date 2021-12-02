@@ -46,13 +46,11 @@
 		def __OnClickSnowModeOptionEnableButton(self):
 			systemSetting.SetSnowMode(True)
 			background.EnableSnow(1, constInfo.ENVIRONMENT_SNOW)
-			background.SetEnvironmentData(1)
 			self.RefreshSnowOption()
 
 		def __OnClickSnowModeOptionDisableButton(self):
 			systemSetting.SetSnowMode(False)
 			background.EnableSnow(0, constInfo.ENVIRONMENT_SNOW)
-			background.SetEnvironmentData(0)
 			self.RefreshSnowOption()
 
 		def RefreshSnowOption(self):
